@@ -1,4 +1,4 @@
-# NestJS Backend Project
+# Backend Project (NestJS + TypeORM)
 
 This project is a backend developed in NestJS and prepared to run in a Docker environment.
 
