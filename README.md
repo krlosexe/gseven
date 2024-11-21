@@ -108,3 +108,17 @@ luego creo un docker-compose.yml para gestionar los servicios, incluyendo la bas
 
 Para estructurar un pipeline CI/CD básico, primero configuraría un repositorio en GitHub, GitLab o cualquier otro servicio que soporte integraciones. Luego, integraría una herramienta de CI/CD como Jenkins, GitHub Actions o GitLab CI para que, cada vez que se realice un commit o push al repositorio, se ejecute automáticamente una serie de pasos. Esto incluiría la instalación de dependencias, la ejecución de pruebas unitarias y de integración, y la construcción de la aplicación. Después, si las pruebas son exitosas, el pipeline desplegaría el código a un entorno de desarrollo o staging, ya sea en un servidor o mediante contenedores Docker
 
+
+### Corrección del error existente:
+
+- **Codigo Corregido:.** 
+
+```typescript
+const transactions = await this.transactionRepository.find({
+  where: { 
+    status: 'COMPLETED',
+    user: userId, 
+  },
+});
+
+P
