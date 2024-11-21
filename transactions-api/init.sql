@@ -42,7 +42,6 @@ INSERT INTO transaction (description, amount, date) VALUES
 ('Transacción Octubre 29', 210.75, '2024-10-29'),
 ('Transacción Octubre 30', 220.50, '2024-10-30'),
 ('Transacción Octubre 31', 250.00, '2024-10-31'),
-
 ('Transacción Noviembre 1', 110.50, '2024-11-01'),
 ('Transacción Noviembre 2', 210.00, '2024-11-02'),
 ('Transacción Noviembre 3', 140.75, '2024-11-03'),
