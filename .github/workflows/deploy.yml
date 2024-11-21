@@ -19,12 +19,12 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-        run: |
-          yarn install
+      run: |
+        yarn install
 
     - name: Run tests
-        run: |
-          yarn test
+      run: |
+        yarn test
 
     - name: Set up SSH
       run: |
