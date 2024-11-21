@@ -113,6 +113,8 @@ Para estructurar un pipeline CI/CD básico, primero configuraría un repositorio
 
 - **Codigo Corregido:.** 
 
+Se agrega el campo user en el where para poder filtrar por el id de usuario
+
 ```typescript
 const transactions = await this.transactionRepository.find({
   where: { 
