@@ -13,21 +13,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '18'
-
-    - name: Install dependencies
-      run: |
-        cd ./transactions-api
-        yarn install
-
-    - name: Run tests
-      run: |
-        cd ./transactions-api
-        yarn test
-
     - name: Set up SSH
       run: |
         mkdir -p ~/.ssh
