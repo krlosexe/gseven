@@ -122,5 +122,3 @@ const transactions = await this.transactionRepository.find({
     user: userId, 
   },
 });
-
-P
