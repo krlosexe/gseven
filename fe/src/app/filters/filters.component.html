@@ -1,33 +1,14 @@
 <ion-row>
-  <ion-col size="auto">
-    <ion-label position="floating">Start Date</ion-label>
-    <ion-datetime-button datetime="startdatetime"></ion-datetime-button>
-  </ion-col>
+  <app-date-picker 
+    label="Start Date" 
+    [date]="startDate" 
+    (datePickerChange)="onDateChange($event, 'start')">
+  </app-date-picker>
 
-  <ion-col size="auto">
-    <ion-label position="floating">End Date</ion-label>
-    <ion-datetime-button datetime="enddatetime"></ion-datetime-button>
-  </ion-col>
+  <app-date-picker 
+    label="End Date" 
+    [date]="endDate" 
+    (datePickerChange)="onDateChange($event, 'end')">
+  </app-date-picker>
 </ion-row>
 
-<ion-modal #startModal [keepContentsMounted]="true">
-  <ng-template>
-    <ion-datetime
-      [value]="startDate"
-      id="startdatetime"
-      presentation="date"
-      (ionChange)="onDateChange($event, 'start')">
-    </ion-datetime>
-  </ng-template>
-</ion-modal>
-
-<ion-modal #endModal [keepContentsMounted]="true">
-  <ng-template>
-    <ion-datetime
-      [value]="endDate"
-      id="enddatetime"
-      presentation="date"
-      (ionChange)="onDateChange($event, 'end')">
-    </ion-datetime>
-  </ng-template>
-</ion-modal>

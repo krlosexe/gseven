@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { FiltersComponent } from '../filters/filters.component';
 import { TransactionListComponent } from '../transaction-list/transaction-list.component'; 
+import { DatePickerComponent } from '../date-picker/date-picker.component'; 
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -15,6 +16,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, FiltersComponent, TransactionListComponent]
+  declarations: [HomePage, FiltersComponent, TransactionListComponent, DatePickerComponent]
 })
 export class HomePageModule {}

@@ -1,0 +1,15 @@
+<ion-col size="auto">
+  <ion-label position="floating">{{ label }}</ion-label>
+  <ion-datetime-button [datetime]="datetimeId" (click)="openModal()"></ion-datetime-button>
+</ion-col>
+
+<ion-modal [keepContentsMounted]="true" [isOpen]="isOpen">
+  <ng-template>
+    <ion-datetime
+      [value]="date"
+      [id]="datetimeId"
+      presentation="date"
+      (ionChange)="onDateChange($event)">
+    </ion-datetime>
+  </ng-template>
+</ion-modal>

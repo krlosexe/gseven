@@ -13,18 +13,11 @@ export class FiltersComponent {
   
   @Output() dateChange = new EventEmitter<{ startDate?: string, endDate?: string }>();
 
-  @ViewChild('startModal', { static: false }) startModal?: IonModal;
-  @ViewChild('endModal', { static: false }) endModal?: IonModal;
-
   onDateChange(event: CustomEvent, type: 'start' | 'end'): void {
-  
     const value = event.detail?.value;
     const formattedDate = value ? value.split('T')[0] : ''; 
 
     const datePayload = type === 'start' ? { startDate: formattedDate } : { endDate: formattedDate };
     this.dateChange.emit(datePayload);
-
-    const modal = type === 'start' ? this.startModal : this.endModal;
-    modal?.dismiss();
   }
 }
