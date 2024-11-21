@@ -25,5 +25,7 @@ El código fuente del backend se encuentra en la carpeta [`transactions-api`](./
 
 - **¿Cómo gestionarías la comunicación entre componentes en Angular para una aplicación como G7BsPay?:** 
   Opcion 1: Uso de servicios compartidos estos servicios pueden emplear Subject o BehaviorSubject de RxJS
+
   Opcion 2: @Input() para pasar datos desde padre al hijo, @Output con EventEmitter para enviar eventos desde el hijo al padre
+  
   Opcion 3 (mi favorita): con un administrador de estado como NgRx (actions, store, reducers, selectors)
