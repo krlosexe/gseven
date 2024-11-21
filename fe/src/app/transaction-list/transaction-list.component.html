@@ -1,0 +1,13 @@
+<ion-list style="height: 400px; overflow-y: scroll;">
+  <ion-item *ngFor="let transaction of transactions">
+    <ion-label>
+      <p><strong>Description:</strong> {{ transaction.description }}</p>
+    </ion-label>
+    <ion-label>
+      <p><strong>Amount:</strong> {{ transaction.amount }}</p>
+    </ion-label>
+    <ion-label>
+      <p><strong>Date:</strong> {{ transaction.date }}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>

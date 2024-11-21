@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-loading [isOpen]="isLoading" message="Cargando datos..." duration="0"></ion-loading>
+
+    <ion-alert
+      *ngIf="errorMessage"
+      [header]="'Error'"
+      [message]="errorMessage"
+      [buttons]="['OK']"
+      [isOpen]="errorMessage != null"
+      (ionAlertDidDismiss)="clearError()"
+    ></ion-alert>
+
+    <ion-grid>
+      <ion-row>
+        <!-- Filters -->
+        <ion-col size="12" size-md="4">
+          <app-filters (dateChange)="onDateChange($event)"></app-filters>
+        </ion-col>
+
+        <!-- List data -->
+        <ion-col size="12" size-md="8">
+          <app-transaction-list [transactions]="transactions"></app-transaction-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>

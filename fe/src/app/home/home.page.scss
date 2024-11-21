@@ -1,0 +1,22 @@
+#container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px; 
+}
+
+ion-loading[aria-hidden="true"] {
+  visibility: visible !important;
+}
+
+@media (min-width: 768px) {
+  #container {
+    padding: 40px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #container {
+    padding: 10px;
+  }
+}
