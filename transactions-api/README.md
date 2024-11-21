@@ -2,14 +2,14 @@
 
 This project is a backend developed in NestJS and prepared to run in a Docker environment.
 
-## Requisitos previos
+## Prerequisites
 
 Make sure you have the following tools installed on your system:
 
 - [Docker](https://www.docker.com/) (versión 20.10 o superior recomendada)
 - [Docker Compose](https://docs.docker.com/compose/) (versión 2.0 o superior)
 
-## Pasos para ejecutar el proyecto
+## Steps to execute the project
 
 1. **Go to the project**
 
@@ -19,7 +19,7 @@ Make sure you have the following tools installed on your system:
 
 2. **Build and run containers**
 
-   Utiliza Docker Compose para construir las imágenes y levantar los contenedores:
+   Use Docker Compose to build the images and launch the containers:
 
    ```bash
    docker-compose up --build
