@@ -8,7 +8,7 @@ import { Transaction } from '../models/transaction.model';
 })
 
 export class TransactionsService {
-  private apiUrl = 'http://52.206.220.66/transactions';
+  private apiUrl = 'http://3.81.218.199/transactions';
 
   constructor(private http: HttpClient) {}
 
